@@ -344,7 +344,7 @@ sections.forEach((s) => sectionObserver.observe(s));
 const konami = [
   "ArrowUp",
   "ArrowUp",
-  "ArrowDown",
+  "ArrowDown ",
   "ArrowDown",
   "ArrowLeft",
   "ArrowRight",
