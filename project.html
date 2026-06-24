@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project — Krish Jaiswal</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="15" fill="%230d0d0d"/><text x="50" y="50" text-anchor="middle" dominant-baseline="middle" font-family="Arial Black, Impact" font-weight="900" font-size="52" fill="%23C8FF00">FD</text></svg>'
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="D:\downloads\files/style.css" />
+     <link rel="stylesheet" href="krishjais.github.io\style.css"/>
+    <base href="krishjais.github.io\">
     <style>
       /* Project page specific */
       .project-page {
@@ -74,6 +80,7 @@
         aspect-ratio: 16/9;
         border-radius: 4px;
         margin-bottom: 60px;
+
         overflow: hidden;
         border: 1px solid var(--border);
       }
@@ -98,6 +105,16 @@
         font-size: 36px;
         color: var(--acid);
         margin-bottom: 20px;
+      }
+      .proj-description-label {
+        color: var(--pink);
+        margin-top: 12px;
+      }
+      .proj-description-text {
+        font-size: 16px;
+        line-height: 1.8;
+        color: rgba(242, 237, 228, 0.7);
+        margin-bottom: 44px;
       }
       .proj-gallery {
         display: grid;
@@ -210,13 +227,18 @@
 
       <p class="proj-desc" id="projDesc">Loading...</p>
 
+      <h2 class="proj-section-label proj-description-label">
+        Project Description
+      </h2>
+      <p class="proj-description-text" id="projDesc2">Loading...</p>
+
       <h2 class="proj-section-label">Gallery</h2>
       <div class="proj-gallery" id="projGallery"></div>
 
       <div class="proj-nav">
         <a href="index.html#work" class="proj-nav-btn">← All Projects</a>
         <a
-          href="https://www.behance.net/rougekjt"
+          href="https://www.behance.net/gallery/228984997/PORTFOLIO/modules/1427417047"
           target="_blank"
           class="proj-nav-btn"
           >View on Behance ↗</a
@@ -238,11 +260,18 @@
         goswasthya: {
           cat: "Branding",
           title: "Goswasthya",
-          year: "2024",
+          year: "2025",
           tools: "Adobe Illustrator, Photoshop",
-          role: "Brand Designer",
-          desc: `<strong>Goswasthya</strong> is a health & wellness brand for which I developed a complete brand identity from scratch. The project involved deep research into the target audience, competitor analysis, and defining the brand personality before translating it into visual form.<br/><br/>The identity system includes a custom logo, a carefully chosen color palette inspired by nature and health, typography guidelines, packaging design, and a social media kit — ensuring visual consistency across all touchpoints.`,
+          role: "Package Designer",
+          descTop: `<strong>GoSwasthya</strong> is a premium Indian food and wellness brand dedicated to bringing traditional, preservative-free nutrition back into everyday households. Founded with the vision of providing clean and wholesome food for future generations, the brand specializes in freshly stone-milled flours, wood cold-pressed oils, Vedic Bilona ghee, natural spices, and other authentic grocery essentials. Every product is crafted using traditional methods, sourced responsibly, and prepared with a strong commitment to purity, freshness, and sustainability. The brand combines age-old Indian food wisdom with modern convenience, helping families make healthier choices without compromising on taste or quality.`,
+          descBottom: `For GoSwasthya, I developed a complete brand identity focused on communicating trust, purity, and traditional Indian values. The design approach was centered around creating a clean and premium visual language that reflects the brand's commitment to natural ingredients and authentic food practices. Through strategic use of typography, color psychology, packaging elements, and brand storytelling, the identity was designed to resonate with health-conscious consumers while maintaining a strong connection to Indian heritage. The final outcome successfully enhanced brand recognition and created a cohesive visual experience across multiple touchpoints.`,
+          heroImage: "assets/goswasthya_main.png",
           heroBg: "linear-gradient(135deg,#1a1a2e,#16213e,#c8ff00)",
+          galleryImages: [
+            "assets/goswasthya_first.png",
+            "assets/goswasthya_sec.png",
+            "assets/goswasthya_third.png",
+          ],
           galleryColors: [
             "linear-gradient(135deg,#0f3460,#16213e)",
             "linear-gradient(135deg,#c8ff00,#80a000)",
@@ -250,83 +279,103 @@
           ],
         },
         "dating-app": {
-          cat: "UI/UX Design",
-          title: "Dating App Concept",
-          year: "2024",
-          tools: "Figma, Adobe Illustrator",
-          role: "UI/UX Designer",
-          desc: `A full UI/UX concept for a modern dating application designed with my team. The focus was on creating an <strong>emotionally resonant</strong> experience — from onboarding flows to match interactions and chat interfaces.<br/><br/>The design system includes 20+ screens, a custom component library, micro-interaction specs, and a full color/type system. The visual language balances warmth with sophistication.`,
+          cat: "Branding",
+          title: "Holy Cow",
+          year: "2026",
+          tools: "Adobe Illustrator",
+          role: "Package Designer",
+          descTop: ``,
+          descBottom: `Holy Cow is a fresh and wholesome food brand focused on promoting healthy eating through simple, trustworthy products. For this project, I developed a complete brand identity and packaging design centered around a friendly cow mascot and custom wordmark that instantly communicate purity, freshness, and approachability. The packaging for the Makhan Butter range uses vibrant blue tones, playful illustrations, and clean typography to create strong shelf appeal while reinforcing the brand’s warm, homemade personality. The result is a cohesive visual identity that helps Holy Cow stand out in the market while staying true to its promise: “Eat Fresh! Eat Healthy!”
+`,
+          heroImage: "assets/11.png",
           heroBg: "linear-gradient(135deg,#ff006e,#8338ec,#3a86ff)",
+          galleryImages: ["assets/12.png", "assets/13.png"],
+          galleryRatios: {
+            "assets/13.png": "21/9",
+          },
           galleryColors: [
             "linear-gradient(135deg,#ff006e,#8338ec)",
             "linear-gradient(135deg,#3a86ff,#8338ec)",
-            "linear-gradient(135deg,#ff006e,#ffbe0b)",
+            ,
           ],
         },
         poster1: {
           cat: "Poster Design",
-          title: "Event Poster Series",
+          title: "Cater Bunees",
           year: "2024",
           tools: "Adobe Photoshop, Illustrator",
           role: "Graphic Designer",
-          desc: `A series of bold typographic event posters for college festivals and social awareness campaigns. Each poster in the series uses a distinctive grid system while maintaining visual cohesion through a shared type hierarchy and color language.<br/><br/>The challenge was creating <strong>maximum visual impact</strong> at small sizes (Instagram posts) and large formats (6×4 ft prints) simultaneously.`,
+          descTop: ``,
+          descBottom: `For Cater Bunees, I designed a vibrant Rajasthani-themed promotional poster created to introduce and showcase their special regional menu. The concept draws inspiration from Rajasthan’s rich culture, colorful traditions, and renowned hospitality. A custom illustrated character dressed in traditional attire serves as the focal point, creating an inviting and memorable visual experience. Combined with warm colors, authentic cultural elements, and appetizing food imagery, the design successfully captures the essence of Rajasthani cuisine while engaging customers and strengthening the brand’s visual identity.
+`,
+          heroImage: "assets/18.png",
           heroBg: "linear-gradient(135deg,#f72585,#7209b7,#3a0ca3)",
-          galleryColors: [
-            "linear-gradient(135deg,#f72585,#7209b7)",
-            "linear-gradient(135deg,#7209b7,#3a0ca3)",
-            "linear-gradient(135deg,#4cc9f0,#7209b7)",
-          ],
+          galleryImages: ["assets/19.png"],
+          galleryColors: ["linear-gradient(135deg,#f72585,#7209b7)"],
         },
         social1: {
-          cat: "Social Media",
-          title: "Social Media Kit",
-          year: "2024",
-          tools: "Canva, Adobe Photoshop",
-          role: "Graphic Designer",
-          desc: `A complete social media design kit including Instagram post templates, story frames, highlight cover icons, and LinkedIn banners for a brand. The kit was designed to be <strong>easily editable</strong> by the client while maintaining visual quality.<br/><br/>Deliverables included 30+ templates across multiple formats, a usage guide, and font/color references.`,
+          cat: "Logo Design",
+          title: "HappiestHer",
+          year: "2025",
+          tools: "Canva, Adobe illustrator",
+          role: "Logo Designer",
+          descTop: ``,
+          descBottom: `HappiestHer is a purpose-driven NGO dedicated to empowering women, fostering independence, and creating opportunities for personal and professional growth. For this project, I designed a modern and minimal brand identity that reflects confidence, progress, and optimism. The logo combines clean typography with an upward-moving symbol, representing growth, empowerment, and the journey toward a brighter future. A subtle gradient accent adds warmth and positivity while maintaining a professional and trustworthy appearance. Designed for both digital and print applications, the identity helps establish a strong, recognizable presence that aligns with the organization's mission of inspiring, supporting, and uplifting women.
+`,
+          heroImage: "assets/1.png",
           heroBg: "linear-gradient(135deg,#06d6a0,#118ab2,#073b4c)",
+          galleryImages: ["assets/2.png", "assets/3.png"],
           galleryColors: [
-            "linear-gradient(135deg,#06d6a0,#1b4332)",
             "linear-gradient(135deg,#118ab2,#073b4c)",
             "linear-gradient(135deg,#06d6a0,#118ab2)",
           ],
         },
         logos: {
-          cat: "Branding",
-          title: "Logo Design Collection",
-          year: "2023-24",
+          cat: "Poster",
+          title: "Dalchini",
+          year: "2025",
           tools: "Adobe Illustrator",
-          role: "Logo Designer",
-          desc: `A curated collection of logo designs crafted for startups and small businesses across food, technology, and lifestyle sectors. Each logo was developed through a thorough process — brief, research, sketching, digital refinement, and final delivery with brand guidelines.<br/><br/>The collection showcases range — from <strong>geometric wordmarks</strong> to pictorial marks and combination logos.`,
+          role: "Poster Designer",
+          descTop: ``,
+          descBottom: `For Dalchini – Infuse Taste, I designed a promotional poster that captures the vibrant energy and bold flavors of Indian street food. The objective was to create an eye-catching marketing piece that reflects the brand’s premium yet approachable personality while showcasing its diverse menu offerings. By combining rich colors, appetizing food photography, clean typography, and a dynamic layout, the design creates a strong visual impact and encourages customer engagement. The final artwork effectively communicates Dalchini’s promise of authentic taste, making it suitable for promotions, catering events, and both online and offline marketing campaigns.`,
+          heroImage: "assets/15.png",
           heroBg: "linear-gradient(135deg,#ff9f1c,#ffbf69,#2d3561)",
-          galleryColors: [
-            "linear-gradient(135deg,#ff9f1c,#e76f51)",
-            "linear-gradient(135deg,#2d3561,#c72c41)",
-            "linear-gradient(135deg,#ffbf69,#ff9f1c)",
-          ],
+          galleryImages: ["assets/16.png"],
+          galleryColors: ["linear-gradient(135deg,#ff9f1c,#e76f51)"],
         },
         packaging: {
-          cat: "Packaging Design",
-          title: "Packaging Design",
+          cat: "Social Media Design",
+          title: "King's Alchemy",
           year: "2024",
-          tools: "Adobe Illustrator, Photoshop",
-          role: "Packaging Designer",
-          desc: `Product packaging concepts developed for FMCG and lifestyle brands. The projects involved understanding shelf presence, material constraints, printing specs, and consumer psychology — then translating that into <strong>visually arresting packaging</strong>.<br/><br/>Each package was designed for real-world production, including bleed marks, color profiles, and die-line specifications.`,
+          tools: "Adobe Illustrator",
+          role: "Graphic Designer",
+          descTop: ``,
+          descBottom: `For King’s Alchemy, a premium wellness and Shilajit supplement brand, I designed a series of social media creatives focused on educating customers while reinforcing the brand’s credibility and premium positioning. The campaign highlights key product benefits, wellness milestones, and brand trust factors through a clean visual hierarchy, bold typography, and a refined gold-inspired color palette. By combining informative content with engaging layouts and lifestyle-focused imagery, the designs effectively communicate the brand’s commitment to performance, vitality, and overall well-being while maintaining a consistent and professional social media presence.
+`,
+          heroImage: "assets/24.png",
           heroBg: "linear-gradient(135deg,#d62828,#f77f00,#fcbf49)",
+          galleryImages: ["assets/20.png", "assets/21.png", "assets/22.png"],
+          galleryFit: "contain",
           galleryColors: [
-            "linear-gradient(135deg,#d62828,#f77f00)",
             "linear-gradient(135deg,#f77f00,#fcbf49)",
+            "linear-gradient(135deg,#f77f00,#fcbf49)",
+
             "linear-gradient(135deg,#d62828,#fcbf49)",
           ],
         },
         music: {
-          cat: "Social Media",
-          title: "Music Brand Campaign",
+          cat: "Branding",
+          title: "Warmleaf",
           year: "2024",
-          tools: "Adobe Photoshop, After Effects",
+          tools: "Adobe Photoshop, After Illustrator",
           role: "Visual Designer",
-          desc: `A complete visual campaign designed for an independent music artist's single launch. The project included <strong>Instagram post designs, Reel cover frames, YouTube banner, and story templates</strong> — all unified under a dark, cinematic aesthetic that matched the song's mood.<br/><br/>The campaign reached 10k+ people organically in its first week.`,
+          descTop: ``,
+          descBottom: `Warmleaf is a modern café brand designed to evoke feelings of comfort, warmth, and connection through every customer interaction. For this project, I developed a complete brand identity centered around a custom logo that combines a coffee cup, flowing leaves, and heart-shaped steam to symbolize quality coffee, natural ingredients, and a welcoming atmosphere. The visual identity features warm earthy tones, elegant typography, and a clean design system that reflects the café’s cozy and premium character. The branding was applied across various touchpoints, including signage, promotional materials, and packaging mockups, creating a cohesive and memorable experience that helps Warmleaf stand out as a destination for coffee lovers and casual gatherings alike.
+`,
+          heroImage: "assets/27.png",
           heroBg: "linear-gradient(135deg,#2d00f7,#6a00f4,#8900f2)",
+          galleryImages: ["assets/6.png", "assets/5.png", "assets/7.png"],
+          galleryFit: "contain",
           galleryColors: [
             "linear-gradient(135deg,#2d00f7,#6a00f4)",
             "linear-gradient(135deg,#6a00f4,#ff2d6f)",
@@ -339,7 +388,9 @@
           year: "2024",
           tools: "Adobe Illustrator, Photoshop",
           role: "Brand Designer",
-          desc: `My own personal brand identity — designed to represent me as a designer-developer hybrid with a bold, modern aesthetic. The process involved soul-searching for what I truly stand for, then building a visual system that communicates it instantly.<br/><br/>The result: a <strong>geometric KJ monogram</strong>, an acid-green color system, custom stationery, email signature, and a social media presence guide — all cohesive and distinctive.`,
+          descTop: `Sample top paragraph for Personal Brand Identity. You can edit this first paragraph separately for this project only.`,
+          descBottom: `Sample bottom paragraph for Personal Brand Identity. You can edit this second paragraph separately for this project only.`,
+          heroImage: "assets/sample.png",
           heroBg: "linear-gradient(135deg,#0d0d0d,#1a1a1a,#333)",
           galleryColors: [
             "linear-gradient(135deg,#111,#c8ff00)",
@@ -360,21 +411,51 @@
       document.getElementById("projCatMeta").textContent = proj.cat;
       document.getElementById("projTools").textContent = proj.tools;
       document.getElementById("projRole").textContent = proj.role;
-      document.getElementById("projDesc").innerHTML = proj.desc;
+      document.getElementById("projDesc").innerHTML = proj.descTop;
+      document.getElementById("projDesc2").innerHTML = proj.descBottom;
       document.title = proj.title + " — Krish Jaiswal";
 
       const heroBg = document.getElementById("projHeroBg");
-      heroBg.style.background = proj.heroBg;
+      if (proj.heroImage) {
+        heroBg.style.backgroundImage = `url('${proj.heroImage}')`;
+        heroBg.style.backgroundSize = "cover";
+        heroBg.style.backgroundPosition =
+          id === "goswasthya" ? "calc(50% - 15px) center" : "center";
+        heroBg.style.backgroundRepeat = "no-repeat";
+      } else {
+        heroBg.style.background = proj.heroBg;
+      }
       heroBg.style.minHeight = "100%";
 
       // Gallery placeholder tiles
       const gallery = document.getElementById("projGallery");
-      proj.galleryColors.forEach((bg, i) => {
-        const item = document.createElement("div");
-        item.className = "proj-gallery-item";
-        item.style.background = bg;
-        gallery.appendChild(item);
-      });
+      if (proj.galleryImages && proj.galleryImages.length) {
+        proj.galleryImages.forEach((img) => {
+          const item = document.createElement("div");
+          item.className = "proj-gallery-item";
+          const mappedRatio = proj.galleryRatios && proj.galleryRatios[img];
+          if (mappedRatio) {
+            item.style.aspectRatio = mappedRatio;
+            item.style.gridColumn = "span 2";
+          } else if (id === "packaging") {
+            item.style.aspectRatio = "1/1";
+            item.style.gridColumn = "span 1";
+          }
+          item.style.backgroundImage = `url('${img}')`;
+          item.style.backgroundSize =
+            proj.galleryFit === "contain" ? "contain" : "cover";
+          item.style.backgroundPosition = "center";
+          item.style.backgroundRepeat = "no-repeat";
+          gallery.appendChild(item);
+        });
+      } else {
+        proj.galleryColors.forEach((bg) => {
+          const item = document.createElement("div");
+          item.className = "proj-gallery-item";
+          item.style.background = bg;
+          gallery.appendChild(item);
+        });
+      }
 
       // Cursor
       const cursor = document.getElementById("cursor");
